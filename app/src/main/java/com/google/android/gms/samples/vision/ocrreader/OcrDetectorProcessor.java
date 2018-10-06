@@ -32,7 +32,7 @@ import java.util.List;
 public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
 
     private GraphicOverlay<OcrGraphic> graphicOverlay;
-    private List<String> wordsSeen = new ArrayList<String>();
+    private static List<String> wordsSeen = new ArrayList<String>();
 
     OcrDetectorProcessor(GraphicOverlay<OcrGraphic> ocrGraphicOverlay) {
         graphicOverlay = ocrGraphicOverlay;
@@ -62,7 +62,7 @@ public class OcrDetectorProcessor implements Detector.Processor<TextBlock> {
         }
     }
 
-    private void addWords(String words){
+    private static void addWords(String words){
         String [] newWords = words.split("\\s+");
         for (int i = 0; i < newWords.length; i++) {
             if (!wordsSeen.contains(newWords[i]))
