@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Language Cards</string>
+    <string name="hello_world">Tap me if you dare</string>
+    <string name="tapme">tap me!</string>
+    <string name="todo">TO DO N1</string>
+    <string name="upload">+</string>
+    <string name="title1">activity1</string>
+    <string name="add">New Set</string>
+    <string name="Upload">Upload</string>
+    <string name="Manual">Manual</string>
+    <string name="title_activity_main3">Main3Activity</string>
+</resources>
